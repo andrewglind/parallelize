@@ -11,8 +11,8 @@ let inside = (p) => {
  return (x*x + y*y) < 1
 }
 
-parallelize(() => { return _.chain(_.range(NUM_SAMPLES)).filter(inside).size().value() }, (err, cores, results) => {
+parallelize((cpus) => { return _.chain(_.range(NUM_SAMPLES / cpus)).filter(inside).size().value() }, (err, cpus, results) => {
  let count = _.reduce(results, (m, i) => { return m + i }, 0)
- console.log(`PI is roughly ${4.0 * (count / (NUM_SAMPLES * cores))}`)
+ console.log(`PI is roughly ${4.0 * (count / (NUM_SAMPLES))}`)
  process.exit()
 })
