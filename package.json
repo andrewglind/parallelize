@@ -1,0 +1,8 @@
+{
+  "name": "parallelize",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "underscore": "^1.8.3"
+  }
+}
