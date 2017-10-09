@@ -1,3 +1,3 @@
 "use strict"
 
-module.exports = require("./parallelize")
+module.exports = require("./lib/parallelize")
