@@ -1,7 +1,6 @@
 "use strict"
 
-let {join} = require("path")
-let parallelize = require(join("..", "lib", "parallelize"))
+let parallelize = require("../lib/parallelize")
 let _ = require("underscore")
 
 const NUM_SAMPLES = process.env.NUM_SAMPLES || 1000000
