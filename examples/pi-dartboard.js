@@ -1,6 +1,6 @@
 "use strict"
 
-let parallelize = require("../lib/parallelize")
+let parallelize = require("../")
 let _ = require("underscore")
 
 const NUM_SAMPLES = process.env.NUM_SAMPLES || 1000000

@@ -1,3 +1,8 @@
 "use strict"
 
-module.exports = require("./lib/parallelize")
+let parallelize = require("./lib/parallelize")
+
+var exports = module.exports = parallelize
+exports.parallelize = parallelize
+exports.mapreduce = parallelize // synonym
+
